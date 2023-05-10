@@ -1,0 +1,12 @@
+<div class="container border">
+<% @restaurants.each do |e| %>
+<div class="container border">
+
+ <h2><%= link_to e.name, restaurant_path(e) %></h2>
+<ul class ="border"><h5> address: <%= e.address %> </h5> </ul>
+<ul class ="border"> <h5> category: <%= e.category %> </h5> </ul>
+
+</div>
+<% end %>
+ <h2> <%= link_to 'Add a NEW HELL YEAH', new_restaurant_path %> </h2>
+</div>
